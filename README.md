@@ -1,27 +1,38 @@
-# Projeto e-commerce
+# Projeto e-commerce gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.1.2.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+## Deploy - GitHub Pages [(Link do projeto)](https://sdeoliveira-r.github.io/e-commerce)
 
-## Development server
+### Desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- 1> $ ng new e-commerce
+- 2> $ cd e-commerce
+- 3> $ npm start
+  - Obs.: Abra outro terminal para criar o component header dentro do module app, e também para, posteriormente criar novos components, modules, etc. 
+- 4> $ ng g c header --module app
+* 5> Utilizando a biblioteca para ícones [Font Awesome](https://fontawesome.com/)
+     - Etapas: cadastro + email + senha + acessar meus kit's + copiar o script Kit Code + colar o script Kit Code no index.html dentro da tag head
+- 6> $ ng g component footer --module app
+- 7> $ ng g module app-routing --flat --module app.module
+- 8> $ ng g module produtos --route produtos --module app.module
+- 9> $ ng g component nao-encontrada
+- 10> $ ng g component produtos/detalhes-produto --module produtos.module
+- 11> $ ng g service produtos
+* 12> Utilizando a biblioteca [Angular Material](https://material.angular.io/guide/getting-started) 
+  - Exemplo: Utilizando a Components - [Snackbar](https://material.angular.io/components/snack-bar/overview)
+  - Instalar: $ ng add @angular/material
+  - Stop server: Ctrl+c - Start server: $ ng serve --open
+  - Importe dentro de app.module: import { MatSnackBarModule } from "@angular/material/snack-bar" e, aplicar em imports: MatSnackBarModule
+- 13> $ ng g service notificacao
+- 14> $ ng generate service carrinho
+- 15> $ ng g module carrinho --route carrinho --module app.module
+- 16> $ ng g module contato --route contato --module app.module
+* 17> Utilizando a biblioteca [npmjs](https://www.npmjs.com/)
+  - Exemplo: Utilizando o package [ngx-mask](https://www.npmjs.com/package/ngx-mask) 
+  - Instalar: $ npm install --save ngx-mask
+  - Importe dentro de app.module: import { NgxMaskModule, IConfig } from 'ngx-mask' e, aplicar em imports: NgxMaskModule.forRoot()
+  - Aplicar a máscara em contato.component.html: mask="(00) 0 0000-0000"
+- 18> $ ng g component barra-pesquisa
+* 19> Building do projeto
+  - Para gerar os arquivos de build acesse a src do projeto, entre no arquivo {} angular.json e adicione em outputPath a pasta docs: "outputPath": "docs" (ou utilize a flag --output-path docs no final do comando a seguir).
+  - 20> $ ng build --base-href="https://sdeoliveira-r.github.io/e-commerce/"
+  - 21> Instalar o Git, fazer as configurações iniciais do Git e fazer o deploy com GitHub Pages.
