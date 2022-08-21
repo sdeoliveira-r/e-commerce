@@ -2,7 +2,7 @@
 
 ## Deploy - GitHub Pages [(Link do projeto)](https://sdeoliveira-r.github.io/e-commerce)
 
-### Desenvolvimento
+### DESENVOLVIMENTO
 
 - 1> $ ng new e-commerce
 - 2> $ cd e-commerce
@@ -36,3 +36,8 @@
   - Para gerar os arquivos de build acesse a src do projeto, entre no arquivo {} angular.json e adicione em outputPath a pasta docs: "outputPath": "docs" (ou utilize a flag --output-path docs no final do comando a seguir).
   - 20> $ ng build --base-href="https://sdeoliveira-r.github.io/e-commerce/"
   - 21> Instalar o Git, fazer as configurações iniciais do Git e fazer o deploy com GitHub Pages.
+
+### REFERÊNCIAS
+
+- [Start By Capgemini](http://capgeminischool.brazilsouth.cloudapp.azure.com/login/index.php)
+- [ProWay EAD](https://www.proway.com.br/ead/)
