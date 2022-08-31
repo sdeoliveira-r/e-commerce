@@ -40,4 +40,5 @@
 ### REFERÊNCIAS
 
 - [Start By Capgemini](http://capgeminischool.brazilsouth.cloudapp.azure.com/login/index.php)
+  - Trilha JAVA - Nome do curso: Angular 
 - [ProWay EAD](https://www.proway.com.br/ead/)
