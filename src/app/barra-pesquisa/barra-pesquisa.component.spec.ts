@@ -21,3 +21,5 @@ describe('BarraPesquisaComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
